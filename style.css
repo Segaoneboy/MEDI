@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Kadwa';
+    src: url("./fonts/Kadwa-Regular.ttf");
+    font-weight: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #FFF500;
+    font-family: 'Kadwa', sans-serif ;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+/* Hero Section */
+
+.full-screen-hero-section{
+    background-image: url("assets/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vh;
+
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+li{
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+a{
+    text-decoration: none;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+blockquote{
+    font-size: 34px;
+}
+cite{
+    font-size: 30px;
+}
+
+
+/* Info Section */
+.info-section{
+    background-color: black;
+    padding: 20vh;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-info-section{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 30vh;
+    justify-content: center;
+}
+
+.img-info-section {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.img-info-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* Task Section */
+
+.task-section{
+    background-color: black;
+    padding: 8vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-task-section{
+    padding-top: 8vh;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+}
+.img-task-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.counter-task-section{
+    display: flex;
+    justify-content: space-between;
+}
+.counter-task-section p{
+    font-size: 32px
+}
+.counter-task-section input{
+    width: 6vw;
+    background-color: black;
+    border: none;
+    margin: 0 0 0 1vw;
+    font-size: 28px;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    resize: none;
+}
+.btn-task-section{
+    color: black;
+    background-color: #FFF500;
+    padding: 1vh 6vh 1vh 6vh ;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+    border-radius: 36px;
+}
+.selectedTime{
+    display: none;
+    font-size: 28px;
+    margin: 0 0 0 1vw;
+
+}
+@media (max-width: 426px) {
+    *{
+        font-size: 10px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh 5vh;
+
+    }
+    li{
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    blockquote{
+        font-size: 14px;
+    }
+    cite{
+        font-size: 12px;
+    }
+    .info-section{
+        flex-direction: column;
+        justify-content: center;
+        padding: 4vh;
+        text-align: center;
+    }
+    .text-info-section{
+        width: 50vw;
+        height: 50vh;
+        font-size: 10px;
+    }
+    .img-info-section{
+        width: 60vw;
+        height: auto;
+    }
+    .task-section{
+        height: 50vh;
+        padding: 4vh;
+    }
+    .img-task-section{
+        padding-top: 4vh ;
+        width: 100%;
+        height: auto;
+    }
+    .counter-task-section p{
+        font-size: 14px;
+    }
+    .counter-task-section input{
+        text-align: center;
+        width: 8vh;
+        font-size: 14px;
+    }
+    .btn-task-section{
+        padding: 0.5vh 3vh 0.5vh 3vh ;
+        font-size: 12px ;
+    }
+
+}
+@media (min-width: 426px) and (max-width: 769px){
+    blockquote{
+        font-size: 26px;
+    }
+    cite{
+        font-size: 20px;
+    }
+    .info-section{
+        justify-content: center;
+        padding: 10vh;
+
+    }
+    .text-info-section{
+        width: 50vw;
+        height: 50vh;
+        font-size: 14px;
+    }
+    .img-info-section{
+        width: 60vw;
+        height: auto;
+    }
+    .counter-task-section p{
+        font-size: 18px;
+    }
+    .counter-task-section input{
+        text-align: center;
+        width: 12vh;
+        font-size: 18px;
+    }
+}

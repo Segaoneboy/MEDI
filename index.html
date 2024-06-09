@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meditation App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/soundmanager2/2.97a.20170601/script/soundmanager2.js"></script>
+    <script  src = './script.js'></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(97527125, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/97527125" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+<body>
+    <div class="full-screen-hero-section">
+        <header>
+            <nav>
+                <p>MEDI</p>
+                <ul>
+                    <li>
+                        <a href="#information">Information</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Task</a>
+                    </li>
+                </ul>
+                <a href="https://t.me/sega_oneboy">Support</a>
+            </nav>
+        </header>
+        <div class="hero-section">
+            <blockquote>
+                "Meditation is not a means to an end.
+                It is both the means and the end."
+            </blockquote>
+            <cite> - Jiddu Krishnamurti</cite>
+        </div>
+    </div>
+    <div class="info-section">
+        <div class="text-info-section">
+            <h1>Why is meditation important?</h1>
+            <p>Meditation is essential for mental well-being as it helps reduce stress and
+               By practicing mindfulness, individuals can enhance their focus and emotional resilience. Additionally, regular meditation promotes a deeper sense of inner peace and self-awareness, leading to overall improved quality of life.</p>
+        </div>
+        <div class="img-info-section">
+            <img src="assets/info-section.jpg" alt="info-img">
+        </div>
+    </div>
+    <div class="task-section">
+        <h1>Task</h1>
+        <div class="img-task-section">
+            <img src="assets/task-section.png" alt="info-img">
+        </div>
+        <div class="counter-task-section">
+            <p >Time:</p>
+            <input  type="text" class="timePicker"  placeholder="mm:ss" maxlength="5" >
+            <p class="selectedTime"></p>
+        </div>
+        <button class="btn-task-section selectBtn">Play</button>
+    </div>
+
+
+</body>
+</html>
